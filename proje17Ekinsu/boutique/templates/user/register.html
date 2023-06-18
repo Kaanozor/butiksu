@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block content %}
+{% include "includes/_navbar2.html" %}
+
+    <div class="container mt-5 mb-5">
+        <form action="" method="POST" class="w-50 m-auto border text-black border-success rounded-2 p-4">
+            {% csrf_token %}
+            <label class="mt-0" for="">User name: </label>
+            <input type="text" name="username" value="{{username}}" required id="" class="form-control">
+            <label class="mt-0" for="">E-mail: </label>
+            <input type="email" name="email" id="" value="{{email}}" required class="form-control">
+            <label class="mt-0" for="">Password: </label>
+            <input type="password" name="password1" required id="" class="form-control">
+            <label class="mt-0" for="">Password confirmation: </label>
+            <input type="password" name="password2" required id="" class="form-control">
+            <input type="submit" value="Register"  class="btn btn-success mt-2">
+        </form>
+    </div>
+{% include "includes/_footer.html" %}
+{% endblock content %}

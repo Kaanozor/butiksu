@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekin Butik</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!--üstte cssi htmlye atadık-->
+    <!------------------------------------------ GoogleFont ------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="{% static 'img/logo.jpeg' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,500&family=Goldman&family=Instrument+Serif&family=Montserrat:ital,wght@1,100&family=Noto+Sans+JP:wght@100;200&display=swap"
+        rel="stylesheet">
+    <!------------------------------------------- Bootstrap Link ----------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    {% if messages %}
+    {% for mesaj in messages %}
+    <div class="alert alert-{{mesaj.tags}} text-center">
+        {{mesaj}}
+    </div>
+    {% endfor %}
+    {% else %}
+    {% endif %}
+
+    {% block content %}
+    {% include "includes/_navbar.html" %}
+
+    <!--COLLECTION KISMI-->
+    <section id="collection">
+        <div class="collection">
+            <div class="container-fluid">
+                <div class="collection-tittle">
+                    <h2>COLLECTION</h2>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+            </div>
+
+            <div class="collection-img anime-left">
+                <div class="container">
+                    <div class="row">
+                        {% for product in products %}
+                        <div class="product-inner col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-3">
+                                <img src="{{product.resim.url}}" height="350" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{product.isim}}</h5>
+                                    <p class="text-black text-start">{{product.kategori.isim}}</p>
+                                    <p class="card-text text-start">Price: {{product.fiyat}} ₺</p>
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="productId" value="{{product.id}}">
+                                        <input class="border-1 border-black" type="number" name="number" value="1"
+                                            id="">
+                                        <input type="submit" value="Add basket" class="btn btn-success pb-3 text-white">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--BLOG KISMI-->
+    <div class="blog container-fluid pt-4">
+        <div class="blog-container">
+            <h1>BLOGS</h1>
+            <div class="blog-post">
+                <h2>Refresh Your Wardrobe with the Latest Trends of the New Season</h2>
+                <p class="post-meta">Author: Ekinsu Aslan | Date: 20 May 2023</p>
+                <p>Hello fashion enthusiasts! A new season is knocking at our doors, and it's time to update our
+                    wardrobes. In this blog post, I will be sharing the hottest trends and styling suggestions for
+                    the 2023 Spring/Summer season.<br>
+
+                    Floral Prints: Floral patterns are an absolute staple for the spring and summer months. Dresses,
+                    skirts, and blouses with floral prints will help you achieve a feminine and vibrant look.
+                    Remember, this season, larger and bolder floral prints are in the spotlight.
+
+                    Pastel Tones: For a soft and romantic look, pastel tones are your go-to choice. Lavender, mint
+                    green, soft pink, and baby blue colors will add freshness to your wardrobe. Complete an outfit
+                    with a pastel-toned dress and white accessories for an elegant ensemble.
+
+                    Chunky Sneakers: Chunky sneakers combine comfort and style, and they are still going strong.
+                    Pair them with jeans, dresses, or skirts to achieve a sporty yet chic look.<br>
+
+                    Remember, the most important thing in fashion is to reflect your own personal style. Adapt these
+                    trends to suit your taste and preferences!</p>
+            </div>
+            <div class="blog-post">
+                <h2>Other Blog Title</h2>
+                <p class="post-meta">Author: Ekin| Date: 15 May 2023</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel tristique purus. Integer
+                    rutrum nisl a tempus dapibus. Fusce dapibus est id purus posuere pellentesque. Suspendisse sit
+                    amet ultrices turpis. Proin finibus nisl eu sem fringilla, sit amet placerat erat fermentum. Sed
+                    eleifend dui et nunc lacinia, id aliquet quam facilisis. Duis vulputate eros id metus fermentum
+                    malesuada.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ABOUT US KISMI-->
+    <div class="aboutus container-fluid pt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="about-us pb-4">
+                    <h2>About Us</h2>
+                    <p>Welcome to our boutique! We are passionate about bringing you the latest trends and unique
+                        fashion pieces that make you look and feel amazing.</p>
+                    <p>At our boutique, we handpick each item with care, ensuring the highest quality and attention to
+                        detail. From stylish clothing to accessories, we strive to offer a curated collection that
+                        reflects your personal style and helps you stand out from the crowd.</p>
+                    <p>Our team of dedicated fashion enthusiasts is always here to assist you, providing personalized
+                        styling advice and exceptional customer service. We believe that every customer is unique, and
+                        we are committed to making your shopping experience memorable and enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "includes/_footer.html" %}
+    {% endblock content %}
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0f9c5d1ee2.js" crossorigin="anonymous"></script>
+    <!--------------------------------------------------- Bootstrap Js --------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{% static 'app.js' %}"></script>
+
+
+</body>
+
+</html>

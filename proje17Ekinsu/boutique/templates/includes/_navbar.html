@@ -1,0 +1,87 @@
+{% load static %}
+<header>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary border-bottom border-bottom-dark"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'img/logo.jpeg' %}" class="rounded-3" width="90" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {% if user.is_authenticated %}
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}"> <i class="bi bi-house "></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-door-open"></i>
+                            Login
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'login' %}">Sign in</a></li>
+                            <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
+                            <li><a class="dropdown-item" href="{% url 'logout' %}">Sign out</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-bookmark"></i>
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for kategori in kategoriler %}
+                                <li><a class="dropdown-item text-start" href="/?search={{kategori.isim}}">{{kategori.isim}}</a></li>
+                            {% endfor %}
+                        </ul>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-4" href="{% url 'basket' %}"> <i class="bi bi-basket"></i> Basket</a>
+                    </li>
+                </ul>
+                {% else %}
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}"> <i class="bi bi-house "></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-door-open"></i>
+                            Login
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'login' %}">Sign in</a></li>
+                            <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
+                            <li><a class="dropdown-item" href="{% url 'logout' %}">Sign out</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-bookmark"></i>
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for kategori in kategoriler %}
+                                <li><a class="dropdown-item text-start" href="/?search={{kategori.isim}}">{{kategori.isim}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+                {% endif %}
+                <form class="d-flex" method="GET" role="search">
+                    <input class="form-control me-2" type="search" name="search" value="{{search}}" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success mt-1 pb-1" type="submit"><i class="bi bi-search pb-5"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>

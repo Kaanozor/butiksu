@@ -1,0 +1,132 @@
+Date : 2023-06-18 19:06:14
+Directory : c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique
+Total : 83 files,  3259 codes, 141 comments, 668 blanks, all 4068 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Python     |         70 |      2,459 |        128 |        558 |      3,145 |
+| HTML       |          8 |        332 |          9 |         38 |        379 |
+| CSS        |          1 |        264 |          4 |         35 |        303 |
+| Markdown   |          1 |        155 |          0 |         32 |        187 |
+| JavaScript |          1 |         37 |          0 |          5 |         42 |
+| JSON       |          2 |         12 |          0 |          0 |         12 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                           | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                              |         83 |      3,259 |        141 |        668 |      4,068 |
+| . (Files)                                                                                                                      |          1 |         15 |          3 |          5 |         23 |
+| .vs                                                                                                                            |          1 |          6 |          0 |          0 |          6 |
+| boutique                                                                                                                       |          6 |        105 |         59 |         45 |        209 |
+| boutique (Files)                                                                                                               |          5 |         99 |         59 |         45 |        203 |
+| boutique\.vs                                                                                                                   |          1 |          6 |          0 |          0 |          6 |
+| iyzipay-python-1.0.37                                                                                                          |         44 |      2,074 |         46 |        449 |      2,569 |
+| iyzipay-python-1.0.37 (Files)                                                                                                  |          2 |        204 |          1 |         40 |        245 |
+| iyzipay-python-1.0.37\iyzipay                                                                                                  |          3 |        828 |          7 |        164 |        999 |
+| iyzipay-python-1.0.37\samples                                                                                                  |         39 |      1,042 |         38 |        245 |      1,325 |
+| product                                                                                                                        |         13 |        358 |         15 |         74 |        447 |
+| product (Files)                                                                                                                |          7 |        264 |         10 |         42 |        316 |
+| product\migrations                                                                                                             |          6 |         94 |          5 |         32 |        131 |
+| static                                                                                                                         |          2 |        301 |          4 |         40 |        345 |
+| templates                                                                                                                      |          8 |        332 |          9 |         38 |        379 |
+| templates (Files)                                                                                                              |          3 |        173 |          8 |         29 |        210 |
+| templates\includes                                                                                                             |          3 |        121 |          1 |          2 |        124 |
+| templates\user                                                                                                                 |          2 |         38 |          0 |          7 |         45 |
+| user                                                                                                                           |          8 |         68 |          5 |         17 |         90 |
+| user (Files)                                                                                                                   |          7 |         68 |          5 |         16 |         89 |
+| user\migrations                                                                                                                |          1 |          0 |          0 |          1 |          1 |
++--------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                       | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\.vs\VSWorkspaceState.json                                               | JSON       |          6 |          0 |          0 |          6 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\boutique\.vs\VSWorkspaceState.json                                      | JSON       |          6 |          0 |          0 |          6 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\boutique\__init__.py                                                    | Python     |          0 |          0 |          1 |          1 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\boutique\asgi.py                                                        | Python     |          4 |          8 |          5 |         17 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\boutique\settings.py                                                    | Python     |         82 |         28 |         32 |        142 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\boutique\urls.py                                                        | Python     |          9 |         15 |          2 |         26 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\boutique\wsgi.py                                                        | Python     |          4 |          8 |          5 |         17 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\README.md                                         | Markdown   |        155 |          0 |         32 |        187 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\iyzipay\__init__.py                               | Python     |         46 |          7 |          5 |         58 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\iyzipay\iyzipay_resource.py                       | Python     |        745 |          0 |        150 |        895 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\iyzipay\pki_builder.py                            | Python     |         37 |          0 |          9 |         46 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\api_test.py                               | Python     |          6 |          1 |          5 |         12 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\approve.py                                | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\cancel.py                                 | Python     |         16 |          1 |          6 |         23 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_card.py                            | Python     |         21 |          1 |          7 |         29 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_limited_company_sub_merchant.py    | Python     |         23 |          1 |          6 |         30 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_marketplace_payment.py             | Python     |         86 |          1 |         10 |         97 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_payment.py                         | Python     |         80 |          1 |         10 |         91 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_payment_with_registered_card.py    | Python     |         76 |          1 |         10 |         87 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_pecco_payment.py                   | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_personal_sub_merchant.py           | Python     |         23 |          1 |          6 |         30 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_private_sub_merchant.py            | Python     |         23 |          1 |          6 |         30 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_threeds_payment.py                 | Python     |         14 |          1 |          6 |         21 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\create_user_and_card.py                   | Python     |         22 |          1 |          7 |         30 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\delete_card.py                            | Python     |         14 |          1 |          6 |         21 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\disapprove.py                             | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\initialize_bkm.py                         | Python     |         69 |          1 |          9 |         79 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\initialize_checkout_form.py               | Python     |         72 |          1 |          9 |         82 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\initialize_pecco.py                       | Python     |         70 |          1 |          9 |         80 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\initialize_threeds.py                     | Python     |         81 |          1 |         10 |         92 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\iyzilink_create_product.py                | Python     |         20 |          1 |          4 |         25 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\iyzilink_delete_product.py                | Python     |         13 |          1 |          4 |         18 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\iyzilink_retrieve_product.py              | Python     |         13 |          1 |          4 |         18 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\iyzilink_retrieve_product_list.py         | Python     |         14 |          1 |          4 |         19 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\iyzilink_update_product.py                | Python     |         21 |          1 |          4 |         26 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\refund.py                                 | Python     |         18 |          1 |          6 |         25 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_bin.py                           | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_bkm_result.py                    | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_bounced_bank_transfers.py        | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_cards.py                         | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_checkout_form_result.py          | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_installments.py                  | Python     |         14 |          1 |          6 |         21 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_payment_detail.py                | Python     |         11 |          0 |          4 |         15 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_payment_result.py                | Python     |         14 |          1 |          6 |         21 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_payout_completed_transactions.py | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_sub_merchant.py                  | Python     |         13 |          1 |          6 |         20 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\retrieve_transactions.py                  | Python     |         12 |          1 |          3 |         16 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\update_limited_company_sub_merchant.py    | Python     |         22 |          1 |          6 |         29 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\update_personal_sub_merchant.py           | Python     |         22 |          1 |          6 |         29 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\samples\update_private_sub_merchant.py            | Python     |         22 |          1 |          6 |         29 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\iyzipay-python-1.0.37\setup.py                                          | Python     |         49 |          1 |          8 |         58 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\manage.py                                                               | Python     |         15 |          3 |          5 |         23 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\__init__.py                                                     | Python     |          0 |          0 |          1 |          1 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\admin.py                                                        | Python     |          9 |          1 |          1 |         11 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\apps.py                                                         | Python     |          4 |          0 |          3 |          7 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\migrations\0001_initial.py                                      | Python     |         16 |          1 |          7 |         24 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\migrations\0002_kategori.py                                     | Python     |         14 |          1 |          6 |         21 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\migrations\0003_product_kategori_alter_product_resim.py         | Python     |         18 |          1 |          6 |         25 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\migrations\0004_alter_product_kategori_basket.py                | Python     |         26 |          1 |          6 |         33 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\migrations\0005_payment.py                                      | Python     |         20 |          1 |          6 |         27 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\migrations\__init__.py                                          | Python     |          0 |          0 |          1 |          1 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\models.py                                                       | Python     |         28 |          1 |          7 |         36 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\tests.py                                                        | Python     |          1 |          1 |          2 |          4 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\urls.py                                                         | Python     |         10 |          1 |          1 |         12 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\product\views.py                                                        | Python     |        212 |          6 |         27 |        245 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\static\app.js                                                           | JavaScript |         37 |          0 |          5 |         42 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\static\style.css                                                        | CSS        |        264 |          4 |         35 |        303 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\basket.html                                                   | HTML       |         37 |          0 |          6 |         43 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\includes\_footer.html                                         | HTML       |         24 |          1 |          0 |         25 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\includes\_navbar.html                                         | HTML       |         86 |          0 |          1 |         87 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\includes\_navbar2.html                                        | HTML       |         11 |          0 |          1 |         12 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\index.html                                                    | HTML       |        126 |          8 |         18 |        152 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\payment.html                                                  | HTML       |         10 |          0 |          5 |         15 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\user\login.html                                               | HTML       |         18 |          0 |          4 |         22 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\templates\user\register.html                                            | HTML       |         20 |          0 |          3 |         23 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\__init__.py                                                        | Python     |          0 |          0 |          1 |          1 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\admin.py                                                           | Python     |          1 |          1 |          2 |          4 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\apps.py                                                            | Python     |          4 |          0 |          3 |          7 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\migrations\__init__.py                                             | Python     |          0 |          0 |          1 |          1 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\models.py                                                          | Python     |          1 |          1 |          2 |          4 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\tests.py                                                           | Python     |          1 |          1 |          2 |          4 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\urls.py                                                            | Python     |          7 |          0 |          1 |          8 |
+| c:\Users\win10\OneDrive\Desktop\proje17Ekinsu\boutique\user\views.py                                                           | Python     |         54 |          2 |          5 |         61 |
+| Total                                                                                                                          |            |      3,259 |        141 |        668 |      4,068 |
++--------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+{% include "includes/_navbar.html" %}
+
+<div class="container my-5">
+    <h3 class="fw-semibold mb-5">BASKET</h3>
+    <div class="row">
+    {% for basket in baskets %}
+        <div class="product-inner col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-3">
+                <img src="{{basket.product.resim.url}}" height="350" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title">{{basket.product.isim}}</h5>
+                        <form action="{% url 'basket' %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="productId" value="{{basket.id}}">
+                            <input type="submit" name="delete" value="" class="btn-close">
+                        </form>                        
+                    </div>
+                    <p class="text-black text-start">{{basket.product.kategori.isim}}</p>
+                    <p class="card-text text-start">Price: {{basket.product.fiyat}} ₺</p>
+                    <p class="card-text text-start">Piece: {{basket.number}}</p>
+                    <p class="card-text text-start">Total Price: {{basket.totalPrice}} ₺ </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    <p class="text-start fs-5 fw-semibold mt-3">Basket Total: {{total}} ₺</p>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Pay" name="payment" class="btn btn-success">
+    </form>
+    
+    </div>
+</div>
+{% include "includes/_footer.html" %}
+
+{% endblock content %}
